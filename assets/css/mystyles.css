@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Arvo|Roboto:300,400,500|Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo|Work+Sans:400,500,700&display=swap');
 
 body {
-    background-color: orange;
-    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #515a5A;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 300px;
     font-size: 16px;
 }
@@ -16,24 +17,31 @@ h5,
 h6 {}
 
 h1 {
-    font-size: 30px;
-    text-align: left;
-    padding: 20px;
+    /*    background-color: orange;*/
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: inline-block;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
 }
 
 h2 {
-    font-size: 25px;
-    background-color: red;
-    padding: 20px 20px 20px 0;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    color: #ffffff;
+    font-size: 25px;
+    border-bottom: 5px solid #4c90a4;
+    padding: 10px 10px 15px 0;
+    letter-spacing: 1px;
+    color: #000000;
+    /*    background-color: lightcoral;*/
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-size: 23px;
-    margin: 20px 0;
 }
 
 h4 {}
@@ -41,17 +49,113 @@ h4 {}
 h5 {}
 
 h6 {
-    font-family:
+    font-family: 'Arvo', serif;
+    margin: 10px 0 20px 0;
 }
 
 
 p {
+    font-size: 20px;
+    line-height: 30px;
     margin-bottom: 30px;
-    line-height: 25px;
-    font-size: 18px;
 }
 
-/*default list*/
+/*link styling*/
+a {
+    color: :#6BBFD6;
+    /*    background-color: black;*/
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #4C90A4;
+}
+
+a:active {
+    color: yellow;
+}
+
+
+/*base layout*/
+.wrapper {
+    width: 1100px;
+    /*    MARGIN (shorthand): TOP/BOTTOM, LEFT/RIGHT */
+    margin: 0 auto;
+}
+
+header {
+    /*    background-color: aquamarine;*/
+    /*    height: 200px;*/
+    padding: 20px;
+}
+
+/*navigation layout*/
+nav {
+    /*    background-color: antiquewhite;*/
+    float: right;
+    margin-bottom: 30px;
+}
+
+
+nav ul {}
+
+nav ul li {
+    /*    make them display across the page*/
+    display: inline;
+    /*    add space between nav boxes*/
+    margin-right: 10px;
+
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    /*    background-color: cornsilk;*/
+    padding: 10px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover,
+nav ul li a.currentpage {
+    background-color: #6BBFD6;
+    /*    hide the underline*/
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.hero {
+    min-height: 450px;
+    background-image: url(../images/churchill-house-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: #f5f5f5;
+}
+
+
+main {
+    /*    background-color: peachpuff;*/
+    /*    padding-bottom: 50px;*/
+    padding: 20px 0;
+    overflow: auto;
+}
+
+/*general layout*/
+
+
+.left-image {
+    float: left;
+    margin: 10px 30px 20px 0;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+/* default list */
 ol,
 ul {
     margin: 20px 0;
@@ -70,105 +174,21 @@ li {
     padding: 5px;
 }
 
-/*link styling*/
-a {
-    color: :#99cc00;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #99cc00;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:active {
-    color: red;
-}
-
-/*navigation layout*/
-nav ul {
-    /*    remove bullet point*/
-    list-style-type: none;
-}
-
-nav ul li {
-    /*    remove default margin we added*/
-    margin-left: 0;
-    /*    make them display across the page*/
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li {}
-
-nav ul li a {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 15px 10px;
-}
-
-nav ul li a:hover {
-
-    background-color: #ffffff;
-    color: #000000;
-    /*    hide the underline*/
-    text-decoration: none;
-}
-
-/*base layout*/
-.wrapper {
-    width: 1000px;
-    /*    MARGIN (shorthand): TOP/BOTTOM, LEFT/RIGHT */
-    margin: 0 auto;
-}
-
-header {
-    background-color: aquamarine;
-    height: 150px;
-}
-
-nav {
-    background-color: lightcoral;
-    height: 50px;
-    line-height: 50px;
-    display: inline-block;
-    float: right;
-    padding-bottom: 10px;
-
-}
-
-main {
-    background-color: peachpuff;
-    padding-bottom: 50px;
-
-
-}
 
 footer {
-    background-color: royalblue;
-    height: 200px;
+    background-color: lightgray;
     padding-top: 20px;
+    border-top: 1px solid #D6D6D6;
+}
+
+footer p {
+    /*    background-color: lightgreen;*/
+    padding: 20px;
+    font-size: 90%;
+    text-align: center;
+    color: #000000;
 }
 
 img {
     max-height: 360px;
-}
-
-.left-image {
-    float: left;
-    margin: 10px 30px 20px 0;
-    border: 1px solid #000000;
-    padding: 10px;
-
-}
-
-/*general layout*/
-footer p {
-    font-size: 14px;
-    text-align: center;
-    color: #ffffff;
-
 }
