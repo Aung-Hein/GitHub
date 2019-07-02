@@ -29,22 +29,53 @@ h1 {
 }
 
 h2 {
-    text-transform: uppercase;
-    font-size: 25px;
-    border-bottom: 5px solid #4c90a4;
-    padding: 10px 10px 15px 0;
+    /*    text-transform: uppercase;*/
+    text-align: center;
+    font-size: 45px;
+
+    padding: 0 0 0 0;
     letter-spacing: 1px;
-    color: #000000;
+    color: gray;
     /*    background-color: lightcoral;*/
     margin-top: 60px;
     margin-bottom: 20px;
 }
 
-h3 {
-    font-size: 23px;
+h2.about-page-left-heading {
+    color: skyblue;
+    margin-top: 150px;
 }
 
-h4 {}
+h2.about-page-right-heading {
+    color: skyblue;
+    margin-top: 150px;
+
+}
+
+h3 {
+    /*    background-color: aquamarine;*/
+    font-size: 23px;
+    color: gray;
+}
+
+
+
+
+h4 {
+    /*    background-color: yellow;*/
+    font-size: 15px;
+    color: gray;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0 20px 0 30px;
+    text-decoration: underline;
+    text-decoration-color: #4c90a4;
+    text-transform: uppercase;
+    /*    border-bottom: 2px solid #4c90a4;*/
+
+
+
+}
 
 h5 {}
 
@@ -54,10 +85,47 @@ h6 {
 }
 
 
+
 p {
+    font-size: 30px;
+
+}
+
+p.p1 {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 30px;
+    color: coral;
+}
+
+p.about-page-text-1 {
+
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+p.about-page-text-2 {
+
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+
+}
+
+p.blue {
+
+    color: blue;
+    margin: 0 0 60px 0;
+}
+
+p.red {
+    color: red;
+}
+
+p.purple {
+    color: mediumpurple;
 }
 
 /*link styling*/
@@ -87,6 +155,10 @@ a:active {
     margin: 0 auto;
 }
 
+.text-container {
+    display: inline;
+}
+
 header {
     /*    background-color: aquamarine;*/
     /*    height: 200px;*/
@@ -107,7 +179,7 @@ nav ul li {
     /*    make them display across the page*/
     display: inline;
     /*    add space between nav boxes*/
-    margin-right: 10px;
+    margin-left: 10px;
 
 }
 
@@ -146,14 +218,74 @@ main {
 }
 
 /*general layout*/
+img {
+    max-height: 260px;
+    max-width: 360px;
 
+}
 
 .left-image {
     float: left;
-    margin: 10px 30px 20px 0;
+    margin: 0 0 0 0;
     border: 1px solid #000000;
     padding: 10px;
 }
+
+.center-image {
+    float: center;
+    margin: 0 0 0 10px;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.right-image {
+    float: right;
+    margin: 0 0 0 0;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.second-left-image {
+    float: left;
+    margin: 0 0 0 0;
+    border: 1px solid #000000;
+    padding: 10px;
+    max-height: 500px;
+    max-width: 500px;
+
+}
+
+.second-right-image {
+    float: right;
+    margin: 0 0 0 50px;
+    border: 1px solid #000000;
+    padding: 10px;
+    max-height: 400px;
+    max-width: 500px;
+
+}
+
+.about-page-left-image {
+    float: left;
+    margin: 310px 0 0 0;
+    border: 1px solid #000000;
+    padding: 10px;
+    max-height: 400px;
+    max-width: 500px;
+
+}
+
+.about-page-right-image {
+    float: right;
+    margin: 160px 40px 280px 50px;
+    border: 1px solid #000000;
+    padding: 10px;
+    max-height: 400px;
+    max-width: 500px;
+
+}
+
+
 
 /* default list */
 ol,
@@ -187,8 +319,4 @@ footer p {
     font-size: 90%;
     text-align: center;
     color: #000000;
-}
-
-img {
-    max-height: 360px;
 }
