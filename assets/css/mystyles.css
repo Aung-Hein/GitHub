@@ -4,8 +4,8 @@ body {
     background-color: #ffffff;
     color: #515a5A;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 300px;
-    font-size: 16px;
+    font-weight: 18.750em;
+    font-size: 1.000em;
 }
 
 /*base typography*/
@@ -19,42 +19,42 @@ h6 {}
 h1 {
     /*    background-color: orange;*/
 
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 1.250em;
+    padding-bottom: 1.250em;
     display: inline-block;
-    font-size: 28px;
+    font-size: 1.750em;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 0.125em;
 
 }
 
 h2 {
     /*    text-transform: uppercase;*/
     text-align: center;
-    font-size: 45px;
+    font-size: 2.813em;
 
     padding: 0 0 0 0;
-    letter-spacing: 1px;
+    letter-spacing: 0.063em;
     color: gray;
     /*    background-color: lightcoral;*/
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 3.750em;
+    margin-bottom: 1.250em;
 }
 
 h2.about-page-left-heading {
     color: skyblue;
-    margin-top: 150px;
+    margin-top: 9.375em;
 }
 
 h2.about-page-right-heading {
     color: skyblue;
-    margin-top: 150px;
+    margin-top: 9.375em;
 
 }
 
 h3 {
     /*    background-color: aquamarine;*/
-    font-size: 23px;
+    font-size: 1.438em;
     color: gray;
 }
 
@@ -63,11 +63,11 @@ h3 {
 
 h4 {
     /*    background-color: yellow;*/
-    font-size: 15px;
+    font-size: 0.938em;
     color: gray;
     text-align: center;
-    margin-bottom: 20px;
-    padding: 0 20px 0 30px;
+    margin-bottom: 1.250em;
+    padding: 0 1.250em 0 1.875em;
     text-decoration: underline;
     text-decoration-color: #4c90a4;
     text-transform: uppercase;
@@ -81,43 +81,43 @@ h5 {}
 
 h6 {
     font-family: 'Arvo', serif;
-    margin: 10px 0 20px 0;
+    margin: 0.625em 0 1.250em 0;
 }
 
 
 
 p {
-    font-size: 30px;
+    font-size: 1.875em;
 
 }
 
 p.p1 {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 30px;
+    font-size: 1.250em;
+    line-height: 1.875em;
+    margin-bottom: 1.875em;
     color: coral;
 }
 
 p.about-page-text-1 {
 
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 30px;
+    font-size: 1.875em;
+    line-height: 1.875em;
+    margin-bottom: 1.875em;
 }
 
 p.about-page-text-2 {
 
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 30px;
-    margin-left: 60px;
+    font-size: 1.875em;
+    line-height: 1.875em;
+    margin-bottom: 1.875em;
+    margin-left: 3.750em;
 
 }
 
 p.blue {
 
     color: blue;
-    margin: 0 0 60px 0;
+    margin: 0 0 3.750em 0;
 }
 
 p.red {
@@ -150,7 +150,7 @@ a:active {
 
 /*base layout*/
 .wrapper {
-    width: 1100px;
+    width: 90%;
     /*    MARGIN (shorthand): TOP/BOTTOM, LEFT/RIGHT */
     margin: 0 auto;
 }
@@ -162,14 +162,14 @@ a:active {
 header {
     /*    background-color: aquamarine;*/
     /*    height: 200px;*/
-    padding: 20px;
+    padding: 1.250em;
 }
 
 /*navigation layout*/
 nav {
     /*    background-color: antiquewhite;*/
     float: right;
-    margin-bottom: 30px;
+    margin-bottom: 1.875em;
 }
 
 
@@ -179,7 +179,7 @@ nav ul li {
     /*    make them display across the page*/
     display: inline;
     /*    add space between nav boxes*/
-    margin-left: 10px;
+    margin-left: 0.625em;
 
 }
 
@@ -187,9 +187,9 @@ nav ul li a {
     color: #000000;
     text-decoration: none;
     /*    background-color: cornsilk;*/
-    padding: 10px 15px;
+    padding: 0.625em 0.938em;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.063em;
 }
 
 nav ul li a:hover,
@@ -201,8 +201,8 @@ nav ul li a.currentpage {
 }
 
 .hero {
-    min-height: 450px;
-    background-image: url(../images/churchill-house-4.jpg);
+    min-height: 28.125em;
+    background-image: url(../images/churchill-house-5.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -213,7 +213,7 @@ nav ul li a.currentpage {
 main {
     /*    background-color: peachpuff;*/
     /*    padding-bottom: 50px;*/
-    padding: 20px 0;
+    padding: 1.250em 0;
     overflow: auto;
 }
 
@@ -227,51 +227,51 @@ img {
 .left-image {
     float: left;
     margin: 0 0 0 0;
-    border: 1px solid #000000;
-    padding: 10px;
+    border: 0.063em solid #000000;
+    padding: 0.625em;
 }
 
 .center-image {
     float: center;
-    margin: 0 0 0 10px;
-    border: 1px solid #000000;
-    padding: 10px;
+    margin: 0 0 0 0.625em;
+    border: 0.063em solid #000000;
+    padding: 0.625em;
 }
 
 .right-image {
     float: right;
     margin: 0 0 0 0;
-    border: 1px solid #000000;
-    padding: 10px;
+    border: 0.063em solid #000000;
+    padding: 0.625em;
 }
 
 .second-left-image {
     float: left;
     margin: 0 0 0 0;
-    border: 1px solid #000000;
-    padding: 10px;
-    max-height: 500px;
-    max-width: 500px;
+    border: 0.063em solid #000000;
+    padding: 0.625em;
+    max-height: 31.250em;
+    max-width: 31.250em;
 
 }
 
 .second-right-image {
     float: right;
-    margin: 0 0 0 50px;
-    border: 1px solid #000000;
-    padding: 10px;
-    max-height: 400px;
-    max-width: 500px;
+    margin: 0 0 0 3.125em;
+    border: 0.063em solid #000000;
+    padding: 0.625em;
+    max-height: 25.000em;
+    max-width: 31.250em;
 
 }
 
 .about-page-left-image {
     float: left;
-    margin: 310px 0 0 0;
-    border: 1px solid #000000;
-    padding: 10px;
-    max-height: 400px;
-    max-width: 500px;
+    margin: 19.375em 0 0 0;
+    border: 0.063em solid #000000;
+    padding: 0.625em;
+    max-height: 25.000em;
+    max-width: 31.250em;
 
 }
 
@@ -280,8 +280,8 @@ img {
     margin: 160px 40px 280px 50px;
     border: 1px solid #000000;
     padding: 10px;
-    max-height: 400px;
-    max-width: 500px;
+    max-height: 25.000em;
+    max-width: 31.250em;
 
 }
 
@@ -290,7 +290,7 @@ img {
 /* default list */
 ol,
 ul {
-    margin: 20px 0;
+    margin: 1.250em 0;
 }
 
 ol {
@@ -309,14 +309,28 @@ li {
 
 footer {
     background-color: lightgray;
-    padding-top: 20px;
-    border-top: 1px solid #D6D6D6;
+    padding-top: 1.250em;
+    border-top: 0.063em solid #D6D6D6;
 }
 
 footer p {
     /*    background-color: lightgreen;*/
-    padding: 20px;
+    padding: 1.250em;
     font-size: 90%;
     text-align: center;
     color: #000000;
+}
+
+/*if screen is larger than 1055px (desktop) */
+@media screen and (max-device-width: 1055px) {
+    .wrapper {
+        widows: 100%;
+    }
+}
+
+/*if screen is larger than 768px (mobile) and 768 (tablet) */
+@media screen and (min-device-width: 375px) and (max-device-width: 768px) {
+    h2 {
+        color: red;
+    }
 }
