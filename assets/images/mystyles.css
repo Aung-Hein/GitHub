@@ -287,9 +287,9 @@ main {
 
 /*control first left and right image*/
 div.picture {
-    float: left;
+    /*    float: left;*/
     margin: 0 0 0 50px;
-    /*    width: 40%;*/
+    width: 30%;
 }
 
 /*control middle image*/
@@ -486,7 +486,7 @@ footer p {
         height: 336px;
         border: 0.063em solid #000000;
         padding: 0.625em;
-        margin: 0 0 0 50px;
+        margin: 0 0 0 100px;
 
     }
 
@@ -656,21 +656,18 @@ footer p {
             widows: 100%;
         }
 
-        /*
         div.picture {
-                float: left;
+            /*    float: left;*/
             margin: 0 0 0 50px;
             width: 30%;
         }
-*/
 
         /*control middle image*/
-        /*        .picture.middle {*/
-        /*        margin: 0 4%;*/
-
+        .picture.middle {
+            /*        margin: 0 4%;*/
+        }
 
         /*Control all first 3 images*/
-        /*
         .picture img {
             width: 448px;
             height: 336px;
@@ -678,20 +675,7 @@ footer p {
             padding: 0.625em;
 
         }
-*/
 
-        div.picture {
-            float: left;
-            margin: 0 0 0 50px;
-            /*            width: 30%;*/
-        }
 
-        div.picture img {
-            width: 448px;
-            height: 336px;
-            border: 0.063em solid #000000;
-            padding: 0.625em;
-            margin: 0 0 0 50px;
 
-        }
     }
