@@ -272,7 +272,7 @@ nav ul li a.currentpage {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    background-color: #f5f5f5;
+    /*    background-color: #f5f5f5;*/
 }
 
 
@@ -310,8 +310,7 @@ div.picture {
 
     text-align: center;
     color: #4C90A4;
-    color: grey;
-    margin: 20px 0 0 0px;
+    margin: 32px 0 0 49px;
 }
 
 .picture h4 {
@@ -319,7 +318,7 @@ div.picture {
     color: gray;
     text-align: center;
     margin-bottom: 0;
-    margin-top: 15px;
+    margin: 15px 0 0 92px;
     padding: 0;
     /*    text-decoration: underline;*/
     text-decoration-color: #4c90a4;
@@ -455,16 +454,26 @@ img {
 
 footer {
     background-color: lightgray;
-    padding-top: 1.250em;
+    padding-top: 5.25em;
     border-top: 0.063em solid #D6D6D6;
+    border-bottom: 0px;
+    margin: 38px 0px 0 0;
 }
 
 footer p {
     /*    background-color: lightgreen;*/
     padding: 1.250em;
+    padding-bottom: 50px;
     font-size: 90%;
     text-align: center;
-    color: #000000;
+    color: gray;
+}
+
+.footer-nav {
+    margin: 0 0 0 800px;
+    padding-bottom: 40px;
+
+
 }
 
 
@@ -477,7 +486,7 @@ footer p {
 
     div.picture {
         float: left;
-        margin: 0 0 0 50px;
+        margin: 0 0 0 35px;
         width: 30%;
     }
 
@@ -694,4 +703,7 @@ footer p {
             margin: 0 0 0 50px;
 
         }
+
+
+
     }
