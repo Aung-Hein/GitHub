@@ -17,7 +17,6 @@ h5,
 h6 {}
 
 h1 {
-    /*    background-color: orange;*/
 
     padding-top: 1.250em;
     padding-bottom: 1.250em;
@@ -25,11 +24,9 @@ h1 {
     font-size: 1.750em;
     text-transform: uppercase;
     letter-spacing: 0.125em;
-
 }
 
 h2 {
-    /*    text-transform: uppercase;*/
     text-align: center;
     font-size: 2.813em;
 
@@ -50,7 +47,6 @@ h2.about-page-right-heading {
 h2.about-page-left-heading {
     color: #4C90A4;
     margin: 570px 10px 60px 100px;
-
 }
 
 h2.robin-page-left-heading {
@@ -134,23 +130,13 @@ h3 {
     color: gray;
 }
 
-
-
-
 h4 {
-    /*    background-color: yellow;*/
     font-size: 0.938em;
     color: gray;
     text-align: center;
     margin-bottom: 290px;
     padding: 10px 0 0 70px;
-    /*    text-decoration: underline;*/
     text-decoration-color: #4c90a4;
-    /*    text-transform: uppercase;*/
-    /*    border-bottom: 2px solid #4c90a4;*/
-
-
-
 }
 
 h5 {}
@@ -173,21 +159,6 @@ p.p1 {
     color: coral;
 }
 
-
-
-p.blue {
-
-    color: blue;
-    margin: 0 0 3.750em 0;
-}
-
-p.red {
-    color: red;
-}
-
-p.purple {
-    color: mediumpurple;
-}
 
 /*link styling*/
 a {
@@ -226,8 +197,6 @@ a:active {
 }
 
 header {
-    /*    background-color: aquamarine;*/
-    /*    height: 200px;*/
     padding: 1.250em;
 }
 
@@ -242,8 +211,10 @@ nav {
 nav ul {}
 
 nav ul li {
+
     /*    make them display across the page*/
-    display: inline;
+    /*    display: inline;*/
+
     /*    add space between nav boxes*/
     margin-left: 0.625em;
 
@@ -261,6 +232,7 @@ nav ul li a {
 nav ul li a:hover,
 nav ul li a.currentpage {
     background-color: #6BBFD6;
+
     /*    hide the underline*/
     text-decoration: none;
     color: #ffffff;
@@ -272,42 +244,36 @@ nav ul li a.currentpage {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    /*    background-color: #f5f5f5;*/
 }
 
 
 main {
-    /*    background-color: peachpuff;*/
-    /*    padding-bottom: 50px;*/
     padding: 1.250em 0;
     overflow: auto;
     width: 100%;
 }
 
 
-/*control first left and right image*/
+/*controls first left and right image*/
 div.picture {
     float: left;
     margin: 0 0 0 50px;
-    /*    width: 40%;*/
 }
 
-/*control middle image*/
+/*controls middle image*/
 .picture.middle {
     /*        margin: 0 4%;*/
 }
 
-/*Control all first 3 images*/
+/*Controls all first 3 images*/
 .picture img {
     width: 448px;
     height: 336px;
     border: 0.063em solid #000000;
     padding: 0.625em;
-
 }
 
 .picture p {
-
     text-align: center;
     color: #4C90A4;
     margin: 32px 0 0 49px;
@@ -320,12 +286,8 @@ div.picture {
     margin-bottom: 0;
     margin: 15px 0 0 92px;
     padding: 0;
-    /*    text-decoration: underline;*/
     text-decoration-color: #4c90a4;
-    /*    text-transform: uppercase;*/
-    /*    border-bottom: 2px solid #4c90a4;*/
 }
-
 
 .square-picture {
     margin-bottom: 15px;
@@ -413,10 +375,6 @@ div.picture {
 }
 
 
-
-
-
-
 /* default list */
 ol,
 ul {
@@ -441,7 +399,6 @@ img {
     height: 358px;
 }
 
-
 .caption {
 
     /*Make the caption a block so it occupies its own line. */
@@ -450,7 +407,6 @@ img {
     margin: 0 0 0 0;
     padding: 100px;
 }
-
 
 footer {
     background-color: lightgray;
@@ -472,238 +428,1271 @@ footer p {
 .footer-nav {
     margin: 0 0 0 800px;
     padding-bottom: 40px;
-
-
 }
 
 
 
-/*if screen is between  1920px(Big Desktop) and 2560px(Extra Large Desktop) */
-@media screen and (min-device-width: 1920px) and (max-device-width: 2560px) {
-    .wrapper {
-        widows: 100%;
+
+/*   ===============================================   For Mobile Screen *  ===========================================================================/*/
+
+@media only screen and (max-width: 375px) {
+
+    body {
+        background-color: #ffffff;
+        color: #515a5A;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 18.750em;
+        font-size: 1.000em;
     }
 
+    /*base typography*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {}
+
+    h1 {
+        padding-top: 1.250em;
+        padding-bottom: 1.250em;
+        display: inline-block;
+        font-size: 25px;
+        text-transform: uppercase;
+        letter-spacing: 0.125em;
+        /* text-align: center; */
+        margin: 0 0 0 25px;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.813em;
+        padding: 0 0 0 0;
+        letter-spacing: 0.063em;
+        margin-top: 3.750em;
+        margin-bottom: 2.250em;
+    }
+
+    h2.about-page-right-heading {
+        color: #4C90A4;
+        margin: 270px 100px 60px 90px;
+    }
+
+    h2.about-page-left-heading {
+        color: #4C90A4;
+        margin: 370px 10px 60px 5px;
+
+    }
+
+    h2.robin-page-left-heading {
+        color: #4C90A4;
+        margin: 370px 10px 60px 5px;
+    }
+
+    h2.robin-page-right-heading {
+        color: #4C90A4;
+        margin: 270px 100px 60px 90px;
+    }
+
+    h2.history-page-left-heading {
+        color: #4C90A4;
+        margin: 370px 10px 60px 5px;
+    }
+
+    h2.history-page-right-heading {
+        color: #4C90A4;
+        margin: 270px 100px 60px 73px;
+    }
+
+    h2.contact-page-left-heading {
+        color: #4C90A4;
+        margin: 50px 100px 50px 95px;
+        font-size: 20px;
+    }
+
+    p.about-page-text-1 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 21px 0 20px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.about-page-text-2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 21px 0 20px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.robin-page-text-1 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 21px 0 20px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.robin-page-text-2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 21px 0 20px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.contact-page-text-1 {
+        font-size: 14px;
+        line-height: 19px;
+        margin: -38px 0 0 112px;
+        color: gray;
+        text-align: justify;
+        padding-bottom: 470px;
+    }
+
+
+    h3 {
+        font-size: 1.438em;
+        color: gray;
+    }
+
+    h4 {
+        font-size: 0.938em;
+        color: gray;
+        text-align: center;
+        margin-bottom: 290px;
+        padding: 10px 0 0 70px;
+        text-decoration-color: #4c90a4;
+    }
+
+    h5 {}
+
+    h6 {
+        font-family: 'Arvo', serif;
+        margin: 0.625em 0 1.250em 0;
+    }
+
+
+
+    p {
+        font-size: 1.875em;
+    }
+
+    p.p1 {
+        font-size: 1.250em;
+        line-height: 1.875em;
+        margin-bottom: 1.875em;
+        color: coral;
+    }
+
+
+    /*link styling*/
+    a {
+        color: :#6BBFD6;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: #4C90A4;
+    }
+
+    a:active {
+        color: yellow;
+    }
+
+    .clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*base layout*/
+    .wrapper {
+        width: 100%;
+
+        /*    MARGIN (shorthand): TOP/BOTTOM, LEFT/RIGHT */
+        margin: 0 auto;
+    }
+
+    .text-container {
+        display: inline;
+    }
+
+    header {
+        padding: 1.250em;
+    }
+
+    /*navigation layout*/
+    nav {
+        float: right;
+        margin-bottom: 1.875em;
+    }
+
+
+    nav ul {}
+
+    nav ul li {
+        /*    make them display across the page*/
+        /*        display: inline;*/
+
+        /*            add space between nav boxes*/
+        margin: 11px 63px 0 0;
+    }
+
+    nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        /*    background-color: cornsilk;*/
+        padding: 0.625em 0.938em;
+        text-transform: uppercase;
+        letter-spacing: 0.063em;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.currentpage {
+        background-color: #6BBFD6;
+        /*    hide the underline*/
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .hero {
+        min-height: 14.125em;
+        background-image: url(../images/churchill-house-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        margin-top: 203px;
+    }
+
+    main {
+        padding: 1.250em 0;
+        overflow: auto;
+        width: 100%;
+    }
+
+    /*controls first left and right image*/
+    div.picture {
+        float: center;
+        margin: 0 0 0 15px;
+        width: 80%;
+        /*    width: 40%;*/
+    }
+
+    /*controls middle image*/
+    .picture.middle {
+        /*        margin: 0 4%;*/
+    }
+
+    /*Controls all first 3 images*/
+    .picture img {
+        width: 324px;
+        height: 211px;
+        border: 0.063em solid #000000;
+        padding: 0.625em;
+        margin: 0 0 0px 0px;
+    }
+
+    .picture p {
+        text-align: center;
+        color: #4C90A4;
+        margin: 32px 0 0 49px;
+        font-size: 1.813em;
+    }
+
+    .picture h4 {
+        font-size: 0.938em;
+        color: gray;
+        text-align: center;
+        margin-bottom: 0;
+        margin: 15px 32px 27px 92px;
+        padding: 0;
+        text-decoration-color: #4c90a4;
+    }
+
+    .square-picture {
+        margin-bottom: 15px;
+        float: left;
+    }
+
+    .square-picture img {
+        width: 322px;
+        height: 322px;
+    }
+
+    .second-left-image {
+        float: left;
+        margin: 0 0 0 15px;
+        border: 0.063em solid #000000;
+        padding: 0.625em;
+        max-height: 300px;
+        max-width: 335px;
+    }
+
+    .second-right-image {
+        float: right;
+        margin: 0 0 0 15px;
+        border: 0.063em solid #000000;
+        padding: 0.625em;
+        max-height: 300px;
+        max-width: 335px;
+    }
+
+    .about-page-left-image {
+        float: left;
+        margin: 0 130px 60px 10px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 347px;
+        height: 282px;
+    }
+
+    .about-page-right-image {
+        float: left;
+        margin: 160px 130px 60px 10px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 347px;
+        height: 282px;
+    }
+
+    .robin-page-right-image {
+        float: left;
+        margin: 0 130px 60px 10px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 347px;
+        height: 282px;
+    }
+
+    .robin-page-left-image {
+        float: left;
+        margin: 160px 130px 60px 10px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 347px;
+        height: 282px;
+    }
+
+    .history-page-right-image {
+        float: left;
+        margin: 0 130px 60px 10px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 347px;
+        height: 282px;
+    }
+
+    .history-page-left-image {
+        float: left;
+        margin: 160px 130px 60px 10px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 347px;
+        height: 282px;
+    }
+
+
+
+    /*     default list */
+    ol,
+    ul {
+        margin: 1.250em 0;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    li {
+        margin-left: 40px;
+        padding: 5px;
+    }
+
+    img {
+        width: 450px;
+        height: 358px;
+    }
+
+    .caption {
+
+        /*            Make the caption a block so it occupies its own line. */
+        display: block;
+        float: center;
+        margin: 0 0 0 0;
+        padding: 100px;
+    }
+
+
+    footer {
+        background-color: lightgray;
+        padding-top: 5.25em;
+        border-top: 0.063em solid #D6D6D6;
+        border-bottom: 0px;
+        margin: 38px 0px 0 0;
+    }
+
+    footer p {
+
+        padding: 1.250em;
+        padding-bottom: 50px;
+        font-size: 90%;
+        text-align: center;
+        color: gray;
+    }
+
+    .footer-nav {
+        margin: 0 0 0 27px;
+        padding-bottom: 4px;
+        font-size: 14px;
+    }
+}
+
+
+/*=================================== For Tablet Screen *  ===========================================================================*/
+
+@media only screen and (min-width: 768px) {
+
+
+    body {
+        background-color: #ffffff;
+        color: #515a5A;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 18.750em;
+        font-size: 1.000em;
+    }
+
+    /*base typography*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {}
+
+    h1 {
+        float: left;
+        padding-top: 1.250em;
+        padding-bottom: 1.250em;
+        display: inline-block;
+        font-size: 1.750em;
+        text-transform: uppercase;
+        letter-spacing: 0.125em;
+        text-align: left;
+    }
+
+    h2 {
+
+        text-align: center;
+        font-size: 1.813em;
+        padding: 0 0 0 0;
+        letter-spacing: 0.063em;
+        color: #4C90A4;
+        margin-top: 3.750em;
+        margin-bottom: 2.250em;
+        margin-top: 3.750em;
+        margin-bottom: 2.250em;
+    }
+
+    h2.about-page-right-heading {
+        color: #4C90A4;
+        margin: 270px 100px 60px 94px;
+    }
+
+    h2.about-page-left-heading {
+        color: #4C90A4;
+        margin: 570px 10px 60px 23px;
+    }
+
+    h2.robin-page-left-heading {
+        color: #4C90A4;
+        margin: 370px 8px 58px 20px;
+    }
+
+    h2.robin-page-right-heading {
+        color: #4C90A4;
+        margin: 450px 100px 60px 100px;
+    }
+
+    h2.history-page-left-heading {
+        color: #4C90A4;
+        margin: 370px 10px 60px 25px;
+    }
+
+    h2.history-page-right-heading {
+        color: #4C90A4;
+        margin: 550px 100px 60px 110px;
+    }
+
+    h2.contact-page-left-heading {
+        color: #4C90A4;
+        margin: 222px 101px 7px 120px;
+    }
+
+    p.about-page-text-1 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 100px 0 110px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.about-page-text-2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 111px 0 110px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.robin-page-text-1 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 111px 0 110px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.robin-page-text-2 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 100px 0 111px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.contact-page-text-1 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 0 286px;
+        color: gray;
+        text-align: justify;
+        padding-bottom: 770px;
+    }
+
+    h3 {
+        font-size: 1.438em;
+        color: gray;
+    }
+
+    h4 {
+        font-size: 0.938em;
+        color: gray;
+        text-align: center;
+        margin-bottom: 290px;
+        padding: 10px 0 0 70px;
+        text-decoration-color: #4c90a4;
+    }
+
+    h5 {}
+
+    h6 {
+        font-family: 'Arvo', serif;
+        margin: 0.625em 0 1.250em 0;
+    }
+
+    p {
+        font-size: 1.875em;
+    }
+
+    p.p1 {
+        font-size: 1.250em;
+        line-height: 1.875em;
+        margin-bottom: 1.875em;
+        color: coral;
+    }
+
+
+    /*link styling*/
+    a {
+        color: :#6BBFD6;
+        /*    background-color: black;*/
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: #4C90A4;
+    }
+
+    a:active {
+        color: yellow;
+    }
+
+    .clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*base layout*/
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text-container {
+        display: inline;
+    }
+
+    header {
+        padding: 1.250em;
+    }
+
+    /*navigation layout*/
+    nav {
+        margin: 88px 23px 25px -337px;
+        float: left;
+    }
+
+    nav ul {}
+
+    nav ul li {
+        /*    make them display across the page*/
+        display: inline;
+        /*    add space between nav boxes*/
+        margin-left: 0.625em;
+    }
+
+    nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        /*    background-color: cornsilk;*/
+        padding: 0.625em 0.938em;
+        text-transform: uppercase;
+        letter-spacing: 0.063em;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.currentpage {
+        background-color: #6BBFD6;
+
+        /*    hide the underline*/
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .hero {
+        min-height: 23.125em;
+        background-image: url(../images/churchill-house-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        margin: 147px 0 0 0;
+    }
+
+
+    main {
+        padding: 1.250em 0;
+        overflow: auto;
+        width: 100%;
+    }
+
+
+    /*controls first left and right image*/
     div.picture {
         float: left;
-        margin: 0 0 0 35px;
-        width: 30%;
-    }
-
-    .picture img {
-        width: 448px;
-        height: 336px;
-        border: 0.063em solid #000000;
-        padding: 0.625em;
         margin: 0 0 0 50px;
-
+        width: 23%;
     }
 
+    /*controls middle image*/
+    .picture.middle {}
 
-    /*if screen is between  1440px(Laptop L) and 1920px(Big Desktop) */
-
-    @media screen and (min-device-width: 1440px) and (max-device-width: 1920px) {
-        .wrapper {
-            widows: 100%;
-        }
-    }
-
-
-    /*if screen is between  1024px(Laptop) and 1440px(Laptop L) */
-    @media screen and (min-device-width: 1024px) and (max-device-width: 1440px) {
-        .wrapper {
-            widows: 100%;
-        }
-
-        div.picture {
-            margin: 0 0 42px 187px;
-            width: 70%;
-
-        }
-
-        div.picture img {
-            width: 100%;
-            height: auto;
-        }
-
-
-
-
-
-        /*
+    /*Controls all first 3 images*/
     .picture img {
-        width: 560px;
-        height: 373px;
+        width: 192px;
+        height: 150px;
         border: 0.063em solid #000000;
         padding: 0.625em;
     }
-*/
 
-        .second-left-image {
-            float: left;
-            margin: 0 0 0 15px;
-            border: 0.063em solid #000000;
-            padding: 0.625em;
-            max-height: 300px;
-            max-width: 335px;
-        }
-
-        /*    For About page*/
-        .about-page-left-image {
-            float: left;
-            margin: 160px 60px 60px 36px;
-            border: 0.063em solid #000000;
-            padding: 3px;
-            width: 690px;
-            height: 543px;
-        }
-
-        .about-page-right-image {
-            float: right;
-            margin: 360px 35px 50px 100px;
-            border: 1px solid #000000;
-            padding: 10px;
-            width: 690px;
-            height: 543px;
-        }
+    .picture p {
+        text-align: center;
+        color: #4C90A4;
+        margin: 32px 0 0 49px;
+        font-size: 20px;
     }
 
-    /*if screen is between  768px and 1024(Laptop) */
-    @media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-        .wrapper {
-            /*        widows: 120%;*/
-            width: 100%;
-        }
-
-        div.picture {
-            margin: 0 0 0 139px;
-            width: 73%;
-
-        }
-
-        .picture img {
-            width: 725px;
-            height: 573px;
-            border: 0.063em solid #000000;
-            padding: 0.625em;
-        }
-
-        .second-left-image {
-            float: left;
-            margin: 0 0 0 110px;
-            border: 0.063em solid #000000;
-            padding: 0.625em;
-            max-height: 300px;
-            max-width: 335px;
-        }
-
-        .second-right-image {
-            float: right;
-            margin: 0 0 0 110px;
-            border: 0.063em solid #000000;
-            padding: 0.625em;
-            max-height: 300px;
-            max-width: 335px;
-        }
+    .picture h4 {
+        font-size: 0.938em;
+        color: gray;
+        text-align: center;
+        margin-bottom: 0;
+        margin: 15px 0 0 58px;
+        padding: 0;
+        text-decoration-color: #4c90a4;
     }
 
-    /*if screen is up to 1055px (desktop) */
-    /*
-@media screen and (max-device-width: 1055px) {
-    .wrapper {
-        widows: 100%;
+    .square-picture {
+        margin-bottom: 15px;
+        float: left;
+    }
+
+    .square-picture img {
+        width: 322px;
+        height: 322px;
+        margin-left: 26px;
+    }
+
+    .second-left-image {
+        float: left;
+        margin: 0 0 0 40px;
+        border: 0.063em solid #000000;
+        padding: 0.625em;
+        max-height: 300px;
+        max-width: 335px;
+    }
+
+    .second-right-image {
+        float: right;
+        margin: 0 0 0 15px;
+        border: 0.063em solid #000000;
+        padding: 0.625em;
+        max-height: 300px;
+        max-width: 335px;
+    }
+
+    .about-page-left-image {
+        float: left;
+        margin: 160px 130px 60px 70px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 625px;
+        height: 440px;
+    }
+
+    .about-page-right-image {
+        float: right;
+        margin: 360px 58px 80px 106px;
+        border: 1px solid #000000;
+        padding: 10px;
+        width: 625px;
+        height: 440px;
+    }
+
+    .robin-page-right-image {
+        float: right;
+        margin: 160px 62px 80px 120px;
+        border: 1px solid #000000;
+        padding: 10px;
+        width: 625px;
+        height: 440px;
+    }
+
+    .robin-page-left-image {
+        float: left;
+        margin: 300px 120px 50px 70px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 625px;
+        height: 440px;
+    }
+
+    .history-page-right-image {
+        float: right;
+        margin: 160px 60px 80px 120px;
+        border: 1px solid #000000;
+        padding: 10px;
+        width: 625px;
+        height: 440px;
+    }
+
+    .history-page-left-image {
+        float: left;
+        margin: 390px 120px 50px 70px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 625px;
+        height: 440px;
+    }
+
+    /* default list */
+    ol,
+    ul {
+        margin: 1.250em 0;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    li {
+        margin-left: 40px;
+        padding: 5px;
+    }
+
+    img {
+        width: 450px;
+        height: 358px;
+    }
+
+
+    .caption {
+
+        /*Make the caption a block so it occupies its own line. */
+        display: block;
+        float: center;
+        margin: 0 0 0 0;
+        padding: 100px;
+    }
+
+
+    footer {
+        background-color: lightgray;
+        padding-top: 5.25em;
+        border-top: 0.063em solid #D6D6D6;
+        border-bottom: 0px;
+        margin: 38px 0px 0 0;
+    }
+
+    footer p {
+        /*    background-color: lightgreen;*/
+        padding: 1.250em;
+        padding-bottom: 50px;
+        font-size: 90%;
+        text-align: center;
+        color: gray;
+    }
+
+    .footer-nav {
+        margin: 0 0 0 205px;
+        padding-bottom: 40px;
     }
 }
-*/
 
 
 
-    /*if screen is between 375px (Mobile M) and up to  768 (Tablet) */
+/* =================================================== For Desktop Screen ===================================================================*/
 
-    @media screen and (min-device-width: 375px) and (max-device-width: 768px) {
+@media only screen and (min-width: 1440px) {
+    body {
+        background-color: #ffffff;
+        color: #515a5A;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 18.750em;
+        font-size: 1.000em;
+    }
 
-        .wrapper {
-            widows: 97%;
-            width: 97%;
-        }
+    /*base typography*/
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {}
 
-        div.picture {
-            float: left;
-            margin: 0;
-            width: 100%;
-        }
+    h1 {
+        padding-top: 1.250em;
+        padding-bottom: 1.250em;
+        display: inline-block;
+        font-size: 1.750em;
+        text-transform: uppercase;
+        letter-spacing: 0.125em;
+    }
 
-        div.picture img {
-            width: 97%;
-            height: auto;
-        }
+    h2 {
+        text-align: center;
+        font-size: 2.813em;
+        padding: 0 0 0 0;
+        letter-spacing: 0.063em;
+        color: #4C90A4;
+        margin-top: 3.750em;
+        margin-bottom: 2.250em;
+        margin-left: 10px;
+    }
 
-        .second-left-image {
-            float: left;
-            margin: 0 0 0 80px;
-            border: 0.063em solid #000000;
-            padding: 0.625em;
-            max-height: 300px;
-            max-width: 335px;
-        }
+    h2.about-page-right-heading {
+        color: #4C90A4;
+        margin: 344px 137px 60px 40px;
+    }
 
-        .second-right-image {
-            float: right;
-            margin: 0 0 0 80px;
-            border: 0.063em solid #000000;
-            padding: 0.625em;
-            max-height: 300px;
-            max-width: 335px;
-        }
+    h2.about-page-left-heading {
+        color: #4C90A4;
+        margin: 630px 10px 60px 115px;
 
     }
 
+    h2.robin-page-left-heading {
+        color: #4C90A4;
+        margin: 370px 10px 60px 100px;
+    }
 
-    /*if screen is between 320px and s375px (Mobile Medium) */
-    @media screen and (max-device-width: 375px) {
-        .wrapper {
-            widows: 100%;
-        }
+    h2.robin-page-right-heading {
+        color: #4C90A4;
+        margin: 490px 102px 60px 40px;
+    }
 
-        /*
-        div.picture {
-                float: left;
-            margin: 0 0 0 50px;
-            width: 30%;
-        }
-*/
+    h2.history-page-left-heading {
+        color: #4C90A4;
+        margin: 370px 10px 60px 100px;
+    }
 
-        /*control middle image*/
-        /*        .picture.middle {*/
+    h2.history-page-right-heading {
+        color: #4C90A4;
+        margin: 550px 100px 60px 40px;
+    }
+
+    h2.contact-page-left-heading {
+        color: #4C90A4;
+        margin: 277px 100px 50px 57px;
+        padding-top: 147px;
+    }
+
+    p.about-page-text-1 {
+        font-size: 21px;
+        line-height: 30px;
+        margin: 0px 40px 0 120px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.about-page-text-2 {
+        font-size: 21px;
+        line-height: 30px;
+        margin: 0px 120px 0px 70px;
+        color: gray;
+        text-align: justify;
+
+    }
+
+    p.robin-page-text-1 {
+        font-size: 21px;
+        line-height: 30px;
+        margin: 0 41px 0 120px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.robin-page-text-2 {
+        font-size: 21px;
+        line-height: 30px;
+        margin: 0 100px 60px 38px;
+        color: gray;
+        text-align: justify;
+    }
+
+    p.contact-page-text-1 {
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 0 0 460px;
+        color: gray;
+        text-align: justify;
+        padding-bottom: 770px;
+    }
+
+
+    h3 {
+        font-size: 1.438em;
+        color: gray;
+    }
+
+    h4 {
+        font-size: 0.938em;
+        color: gray;
+        text-align: center;
+        margin-bottom: 290px;
+        padding: 10px 0 0 70px;
+        text-decoration-color: #4c90a4;
+    }
+
+    h5 {}
+
+    h6 {
+        font-family: 'Arvo', serif;
+        margin: 0.625em 0 1.250em 0;
+    }
+
+    p {
+        font-size: 1.875em;
+    }
+
+    p.p1 {
+        font-size: 1.250em;
+        line-height: 1.875em;
+        margin-bottom: 1.875em;
+        color: coral;
+    }
+
+    /*link styling*/
+    a {
+        color: :#6BBFD6;
+        /*    background-color: black;*/
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: #4C90A4;
+    }
+
+    a:active {
+        color: yellow;
+    }
+
+    .clearfix {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /*base layout*/
+    .wrapper {
+        width: 91%;
+        margin: 0 auto;
+    }
+
+    .text-container {
+        display: inline;
+    }
+
+    header {
+        padding: 1.250em;
+    }
+
+    /*navigation layout*/
+    nav {
+        float: right;
+        margin-bottom: 1.875em;
+    }
+
+    nav ul {}
+
+    nav ul li {
+        /*    make them display across the page*/
+        display: inline;
+
+        /*    add space between nav boxes*/
+        margin-left: 0.625em;
+
+    }
+
+    nav ul li a {
+        color: #000000;
+        text-decoration: none;
+        padding: 0.625em 0.938em;
+        text-transform: uppercase;
+        letter-spacing: 0.063em;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.currentpage {
+        background-color: #6BBFD6;
+
+        /*    hide the underline*/
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .hero {
+        min-height: 35.125em;
+        background-image: url(../images/churchill-house-4.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
+
+
+    main {
+        padding: 1.250em 0;
+        overflow: auto;
+        width: 100%;
+    }
+
+
+    /*controls first left and right image*/
+    div.picture {
+        float: left;
+        margin: 0 0 0 50px;
+        width: 28%;
+    }
+
+    /*controls middle image*/
+    .picture.middle {
         /*        margin: 0 4%;*/
+    }
 
+    /*Controls all first 3 images*/
+    .picture img {
+        width: 370px;
+        height: 300px;
+        border: 0.063em solid #000000;
+        padding: 0.625em;
+    }
 
-        /*Control all first 3 images*/
-        /*
-        .picture img {
-            width: 448px;
-            height: 336px;
-            border: 0.063em solid #000000;
-            padding: 0.625em;
+    .picture p {
 
-        }
-*/
+        text-align: center;
+        color: #4C90A4;
+        margin: 32px 0 0 49px;
+    }
 
-        div.picture {
-            float: left;
-            margin: 0 0 0 50px;
-            /*            width: 30%;*/
-        }
+    .picture h4 {
+        font-size: 20px;
+        color: gray;
+        text-align: center;
+        margin-bottom: 0;
+        margin: 15px 0 0 92px;
+        padding: 0;
+        text-decoration-color: #4c90a4;
+    }
 
-        div.picture img {
-            width: 448px;
-            height: 336px;
-            border: 0.063em solid #000000;
-            padding: 0.625em;
-            margin: 0 0 0 50px;
+    .square-picture {
+        margin-bottom: 15px;
+        float: left;
+    }
 
-        }
+    .square-picture img {
+        width: 322px;
+        height: 322px;
+        margin-left: 40px;
+    }
 
-
+    .second-left-image {
+        float: left;
+        margin: 0 0 0 40px;
+        border: 0.063em solid #000000;
+        padding: 0.625em;
+        max-height: 300px;
+        max-width: 335px;
 
     }
+
+    .second-right-image {
+        float: right;
+        margin: 0 0 0 15px;
+        border: 0.063em solid #000000;
+        padding: 0.625em;
+        max-height: 300px;
+        max-width: 335px;
+    }
+
+    .about-page-left-image {
+        float: left;
+        margin: 170px 85px 60px 70px;
+        border: 0.063em solid #000000;
+        padding: 0px 0px 0px 0px;
+        width: 650px;
+        height: 450px;
+    }
+
+    .about-page-right-image {
+        float: right;
+        margin: 417px 40px 51px 85px;
+        border: 1px solid #000000;
+        padding: 10px;
+        width: 650px;
+        height: 450px;
+    }
+
+    .robin-page-right-image {
+        float: right;
+        margin: 160px 40px 80px 85px;
+        border: 1px solid #000000;
+        padding: 10px;
+        width: 700px;
+        height: 500px;
+    }
+
+    .robin-page-left-image {
+        float: left;
+        margin: 300px 90px 50px 40px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 700px;
+        height: 500px;
+    }
+
+    .history-page-right-image {
+        float: right;
+        margin: 160px 40px 80px 120px;
+        border: 1px solid #000000;
+        padding: 10px;
+        width: 650px;
+        height: 450px;
+    }
+
+    .history-page-left-image {
+        float: left;
+        margin: 390px 120px 50px 40px;
+        border: 0.063em solid #000000;
+        padding: 3px;
+        width: 650px;
+        height: 450px;
+    }
+
+    /* default list */
+    ol,
+    ul {
+        margin: 1.250em 0;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    li {
+        margin-left: 40px;
+        padding: 5px;
+    }
+
+    img {
+        width: 450px;
+        height: 358px;
+    }
+
+
+    .caption {
+
+        /*Make the caption a block so it occupies its own line. */
+        display: block;
+        float: center;
+        margin: 0 0 0 0;
+        padding: 100px;
+    }
+
+
+    footer {
+        background-color: lightgray;
+        padding-top: 5.25em;
+        border-top: 0.063em solid #D6D6D6;
+        border-bottom: 0px;
+        margin: 38px 0px 0 0;
+    }
+
+    footer p {
+        padding: 1.250em;
+        padding-bottom: 50px;
+        font-size: 90%;
+        text-align: center;
+        color: gray;
+    }
+
+    .footer-nav {
+        margin: 0 0 0 550px;
+        padding-bottom: 40px;
+    }
+}
